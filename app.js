@@ -3,14 +3,10 @@ var spider = require("./src/spider.js");
 var schedule = require("node-schedule");
 var log = require("./src/log.js");
 
-/*schedule.scheduleJob('0/1 * * * * *', function(){
-    log.info("app")
-   /!* count = 0;*!/
-});*/
 schedule.scheduleJob('/5 * * * * *', function(){
     log.info("app2")
 });
-/*var lastUpdateTime = "";
+var lastUpdateTime = "";
 var count = 0;
 log.info("开始运行程序");
 schedule.scheduleJob('0 0/1 * * * *', function(){
@@ -42,7 +38,4 @@ schedule.scheduleJob('0 0/1 * * * *', function(){
         });
     }
 });
-schedule.scheduleJob('0 12 23 * * *', function(){
-    count = 0;
-});*/
 
